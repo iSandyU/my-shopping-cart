@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-shopping-cart';
+
+  currentMenu:string = 'recipe';
+
+  onMenuChange(feature:string){
+      this.currentMenu = feature ;
+  }
 }
