@@ -1,11 +1,12 @@
 
-<app-header (featureEvent)="onMenuChange($event)"></app-header>
+<app-header></app-header>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-          <app-recipes *ngIf="currentMenu === 'recipe'"></app-recipes>
-          <app-shopping-list *ngIf="currentMenu === 'shopping-list'"></app-shopping-list>
-          <h2>I'm Working</h2>
+          <!-- <app-recipes *ngIf="currentMenu === 'recipe'" ></app-recipes>
+          <app-shopping-list *ngIf="currentMenu === 'shopping-list'"></app-shopping-list> -->
+          <router-outlet></router-outlet>
+          <!-- <h2>I'm Working</h2> -->
         </div>
     </div>
 </div>
